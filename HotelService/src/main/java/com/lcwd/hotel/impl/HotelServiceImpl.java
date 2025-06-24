@@ -18,8 +18,8 @@ public class HotelServiceImpl implements HotelService {
     private HotelRepository hotelRepository;
     @Override
     public Hotel create(Hotel hotel) {
-        //String string = UUID.randomUUID().toString();
-        // hotel.setId(string );
+        String string = UUID.randomUUID().toString();
+        hotel.setId(string);
         return hotelRepository.save(hotel);
     }
 

@@ -17,10 +17,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User createUser(User user) {
-       /* // Generate a random UUID for the user ID
+      // Generate a random UUID for the user ID
         String string = UUID.randomUUID().toString();
         // Set the generated UUID as the user ID
-        user.setUserId(string); */
+        user.setUserId(string);
         return userRepository.save(user);
     }
 
